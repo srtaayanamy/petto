@@ -1,51 +1,117 @@
-# Welcome to your Expo app 👋
+#Petto - Guia de Instalação e Execução
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+- Requisitos:
 
-## Get started
+Antes de começar, você precisa ter instalado em seu computador:
 
-1. Install dependencies
+Node.js (versão LTS recomendada)
 
-   ```bash
-   npm install
-   ```
+Git
 
-2. Start the app
+Um terminal (como o CMD, PowerShell ou Terminal no Mac/Linux)
 
-   ```bash
-    npx expo start
-   ```
+Um editor de código (recomendado: Visual Studio Code)
 
-In the output, you'll find options to open the app in a
+Celular com Android ou iOS com o aplicativo Expo Go instalado (disponível na Google Play e App Store)
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
 
-## Get a fresh project
+---
 
-When you're ready, run:
+#Passo 1: Instalar o Expo CLI
 
-```bash
-npm run reset-project
-```
+Abra o CMD (Prompt de Comando) e digite:
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+npm install -g expo-cli
 
-## Learn more
+Esse comando instala a interface de linha de comando do Expo de forma global.
 
-To learn more about developing your project with Expo, look at the following resources:
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+---
 
-## Join the community
+#Passo 2: Clonar o projeto existente
 
-Join our community of developers creating universal apps.
+Execute o comando abaixo usando a url desse repositório:
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
-# petto
+git clone https://github.com/seu-usuario/seu-repositorio.git
+cd seu-repositorio
+
+Substitua seu-usuario e seu-repositorio pela URL correta do projeto.
+
+
+---
+
+Passo 3: Instalar as dependências
+
+Se você já clonou o projeto, rode:
+
+npm install
+
+Esse comando instala todas as bibliotecas necessárias listadas no package.json.
+
+
+---
+
+Passo 4: Iniciar o projeto
+
+Com as dependências instaladas, agora é só iniciar o servidor de desenvolvimento:
+
+npx expo start
+
+Esse comando abrirá uma aba no navegador com um QR Code.
+
+
+---
+
+Passo 5: Executar o app no celular
+
+1. Instale o aplicativo Expo Go no seu celular.
+
+
+2. Conecte seu celular à mesma rede Wi-Fi do computador.
+
+
+3. Abra o app Expo Go e escaneie o QR Code que apareceu no navegador após o comando npx expo start.
+
+
+
+Pronto! O app vai abrir automaticamente no seu celular.
+
+
+---
+
+Dicas úteis
+
+Para reiniciar o app, pressione r no terminal.
+
+Para abrir o menu de desenvolvedor, pressione d.
+
+Para limpar o cache (caso algo dê erro), use:
+
+
+npx expo start -c
+
+
+---
+
+Possíveis erros e soluções
+
+Porta ocupada
+
+> Erro: “Another process is using port 19000...”
+
+
+
+Solução:
+
+npx expo start --port 19001
+
+O app não abre no celular
+
+Certifique-se de que o celular e o PC estão na mesma rede Wi-Fi.
+
+Tente usar a opção “Tunnel” em vez de “LAN” no navegador Expo.
+
+
+
+---
