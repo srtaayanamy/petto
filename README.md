@@ -1,4 +1,4 @@
-#Petto - Guia de Instalação e Execução
+Petto - Guia de Instalação e Execução
 
 - Requisitos:
 
@@ -18,7 +18,7 @@ Celular com Android ou iOS com o aplicativo Expo Go instalado (disponível na Go
 
 ---
 
-#Passo 1: Instalar o Expo CLI
+Passo 1: Instalar o Expo CLI
 
 Abra o CMD (Prompt de Comando) e digite:
 
@@ -29,7 +29,7 @@ Esse comando instala a interface de linha de comando do Expo de forma global.
 
 ---
 
-#Passo 2: Clonar o projeto existente
+Passo 2: Clonar o projeto existente
 
 Execute o comando abaixo usando a url desse repositório:
 
